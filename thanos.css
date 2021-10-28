@@ -1,0 +1,14 @@
+p {
+  color: red;
+}
+.infstones{
+  background-image: linear-gradient(to right, purple, blue, green, yellow, orange, red);
+  width: 95px;
+}
+img {
+  border: 5px solid #0000FF;
+  padding: 10px;
+}
+li{
+  font-style:italic;
+}
