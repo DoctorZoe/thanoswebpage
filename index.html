@@ -3,43 +3,322 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Thanos the Cat</title>
-  <link rel="stylesheet" href="thanos.css">
-  <style>
-    body {
-      background-color: gray;
-    }
-    p {
-      font-weight: bold;
-    }
-    h4 {
-      color: blue;
-    }
-  </style>
+  <title>Final Project</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
 </head>
-
 <body>
-
-  <h1 style="color:purple">Thanos</h1>
-  <style="color:pink">
-    <p>Hello there! I'm <span style="color:purple; font-style:italic">balance seeking</span> cat.</p>
-    </style>
-    <img class="fit-picture" src=https://cdn.discordapp.com/attachments/496810748069281804/581842801352769542/69bd029b-3a9d-4d9e-9e00-6493e36ae28d.png alt="Thanos' Picture" height="600">
-    <br>
-    <b>
-      <h4>My pet's food:</h4>
-    </b>
-    <ul style>
-      <li>Kibble</li>
-      <li>Fish</li>
-      <li>Milk</li>
-      <li class="infstones" style="color:white">Infinity Stones</li>
+  <nav>
+    <ul class="navigation">
+      <!-- no href needed since it's working hiding/showing divs. -->
+      <li><a href="#" onclick="showProfile()">Profile</a></li>
+      <li><a href="#" onclick="showHobbies()">Hobbies</a></li>
+      <li><a href="#" onclick="showJava()">JS Cheat Sheet</a></li>
     </ul>
+  </nav>
+  <div class="mainPage">
+    <div class="myCard">
+      <img src="images/pedrof.jpg" alt="Pedro Ferreira" style="width:100%">
+      <h1>Pedro Ferreira</h1>
+      <form action="mailto:pedrohmf89@gmail.com" method="GET">
+        <input class="sendButton" type="submit" value="Send E-mail" />
+        <br>
+      </form>
+      <p>Product Manager, Future Software Developer</p>
+      <p>UFRJ, Bow Valley College</p>
+      <a href="https://ufrj.br/en/"><img src="images/ufrj.png" alt="Pedro Ferreira" style="width:12%"></a>
+      <a href="https://bowvalleycollege.ca/"><img src="images/bvc.png" alt="Pedro Ferreira" style="width:20%"></a>
+      <p>RPG and Gaming Ethusiast, Part-Time Writer and Master of Stupid Facts.</p>
+    </div>
 
-    <p>Find me on google.<a href="https://www.google.com"> Go to google...</a></p>
+    <!-- PROFILE BEGINS -->
+    <div class="currentBody" id="profile">
+      <h1>Hello there, I am <b>Pedro Ferreira</b>.</h1>
+      <p>I am brazilian Business Major in Business Administration from Rio de Janeiro's Federal University (UFRJ), currently living in Brasil and studying Softwater Development at the <i>Bow Valley College,</i> on Calgary-AB, Canada.</p>
+      <p>Formaly working as a Project Manager for both the <a href="https://www.telefonica.com/en/">Telefonica Group</a> and <a href="https://verisoft.com.br/">Verisoft</a>, I decided expand my horizons and improve my knowledge by starting my studies
+        on <em>Software Development</em> and, in the near future, plan to move to Canada.</p>
+      <p>I was born in 1989 and have lived most of my life in Rio de Janeiro. While most of the people around look at me as an extrovert with a lot to talk about, I consider myself more of a absurdly curious introvert with a hunger for learning. Life
+        has taught me not to be shy about my wishes, look for opportunities at every crevice and to stand my ground at every inch.</p>
+      <h2>Work Experiences:</h2>
+      <ul>
+        <li>Project Manager @ Verisoft, 2018 - 2021</li>
+        <li>Product Manager @ Telefonica, 2017 - 2018</li>
+        <li>Data Analyst @ Telefonica, 2017</li>
+        <li>Intern on Data Analysis @ Telefonica, 2016 - 2017</li>
+        <li>Consulting Assistant @ <a href="https://www.ayraconsultoria.com.br/">Ayra Consultoria</a>, 2015</li>
+      </ul>
+      <h2>Technical Experiences:</h2>
+      <ul>
+        <li>Language: English @ Advanced Level</li>
+        <li>Language: French @ Basic Level</li>
+        <li>Language: Spanish @ Basic Level</li>
+        <li>Microsoft Office Package @ Advanced Level</li>
+        <li>Adobe Photoshop @ Basic Level</li>
+        <li>Fire Brigade Training @ Telefonica</li>
+        <li>First Aid Training @ <a href="https://www.rhmed.com.br/">RHMED</a></li>
+      </ul>
+      <h2>Personal Experiences:</h2>
+      <ul>
+        <li>Volunteer @ <a href="https://www.aldeiasinfantis.org.br/">Aldeias Infantis</a></li>
+        <li>Boyscout @ <a href="https://medianeira76.com.br/">Scout Group 76º Medianera</a></li>
+      </ul>
+    </div>
+    <!-- PROFILE ENDS, HOBBIES BEGIN -->
+    <div class="currentBody" id="hobbies">
+      <h1>Reading Fantasy and Sci-Fi</h1>
+      <p>Personally, I love reading and collecting fantasy and sci-fi books, with my personal favorites being <em>The Lord of the Rings</em> and <em>Harry Potter</em> franchises, along with authors <em>Arthur C. Clarke</em> and <em>Isaac Asimov</em>.
+        If I had to pick a favorite book, it would be either <em>Childhood's End</em> by the first or <em>Foudation</em> by the latter. However, if I had to save one piece of writing (or suggest reading to everyone on the planet) it would be <a
+          href="https://www.physics.princeton.edu/ph115/LQ.pdf"><em>The Last Question</em></a>, a short story by Asimov, which is by far the work of fiction that had the most impact in my life.</p>
+      <h1>Collecting Lego Bionicle</h1>
+      <table style="border-spacing: 5px">
+        <tr>
+          <td>
+            While not a continuous hobby per se, I collected most of the Lego Bionicle series and consider it to be my most prized collection. I started collecting it in 2001 and only stopped when the series came to an end in 2010.
+            <br>
+            <br>
+            My collection started with the set <a href="https://www.bricklink.com/v2/catalog/catalogitem.page?S=8536-1">8536 - Kopaka</a>, released in 2001 when I was 11, thus it's possible to see the wear and tear of the set on the image beside. The
+            Bionicle Saga, compromised of the sets, comics, movies and books were a big part of my life and a great influence to me as a kid and teenager.
+            <br>
+            <br>
+            Today, my collection spams more than 200 sets and is one of my major issues with moving to Canada, since I expect to one day be able to take all of them with me.
+          </td>
+          <td style="text-align: center">
+            <img src="images/kopaka.png" alt="Kopaka" style="width:80%">
+            <br>
+            <em>Kopaka, 2001-Edition; along with the promotional Mask of Time. Photo by Me.</em>
+          </td>
+        </tr>
+      </table>
+      <h1>RPG and Gamming</h1>
+      <p>Another big part of my life is gamming and most specially table-top (now digital, online Table-Top) RPGs. Role-Playing Games such as Dungeons and Dragons and GURPS were part of my life since I was a kid and helped me develop both as an
+        individual by improving my social skills and as a professional by improving several of my organization and time-management skills.</p>
+      <p>Not only RPG was a great tool for learning on itself, but it also prompted me to action on learning english so I could consume materials that weren't translated to my native language and developed my taste in reading. </p>
+      <p>Table-Top RPGs are usually played using dices with multiple number of sides. For example, a six sided dice is refered to a as d6. Since the Pandemic forced us to start playing online-only, we make use of dice rollers such as this one below to be able to play:</p>
+      <table style="text-align: center">
+        <tr>
+          <td>
+            <input type="button" onclick="rollD4()" value="Roll">
+          </td>
+          <td>
+            <input type="Number" style="width: 9em" id="nD4" placeholder="Number of Dies">
+          </td>
+          <td>
+            <b>d4</b>
+          </td>
+          <td>
+            Result:
+          </td>
+          <td>
+            <input disabled type="text" size="1" id="rD4" placeholder="0">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" onclick="rollD6()" value="Roll">
+          </td>
+          <td>
+            <input type="Number" style="width: 9em" id="nD6" placeholder="Number of Dies">
+          </td>
+          <td>
+            <b>d6</b>
+          </td>
+          <td>
+            Result:
+          </td>
+          <td>
+            <input disabled type="text" size="1" id="rD6" placeholder="0">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" onclick="rollD8()" value="Roll">
+          </td>
+          <td>
+            <input type="Number" style="width: 9em" id="nD8" placeholder="Number of Dies">
+          </td>
+          <td>
+            <b>d8</b>
+          </td>
+          <td>
+            Result:
+          </td>
+          <td>
+            <input disabled type="text" size="1" id="rD8" placeholder="0">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" onclick="rollD10()" value="Roll">
+          </td>
+          <td>
+            <input type="Number" style="width: 9em" id="nD10" placeholder="Number of Dies">
+          </td>
+          <td>
+            <b>d10</b>
+          </td>
+          <td>
+            Result:
+          </td>
+          <td>
+            <input disabled type="text" size="1" id="rD10" placeholder="0">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" onclick="rollD12()" value="Roll">
+          </td>
+          <td>
+            <input type="Number" style="width: 9em" id="nD12" placeholder="Number of Dies">
+          </td>
+          <td>
+            <b>d12</b>
+          </td>
+          <td>
+            Result:
+          </td>
+          <td>
+            <input disabled type="text" size="1" id="rD12" placeholder="0">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" onclick="rollD20()" value="Roll">
+          </td>
+          <td>
+            <input type="Number" style="width: 9em" id="nD20" placeholder="Number of Dies">
+          </td>
+          <td>
+            <b>d20</b>
+          </td>
+          <td>
+            Result:
+          </td>
+          <td>
+            <input disabled type="text" size="1" id="rD20" placeholder="0">
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!-- HOBBIES ENDS, CHEAT SHEEET BEGIN -->
+    <div class="currentBody" id="javaScriptCS">
 
+      <h1>JavaScript Cheat Sheet</h1>
+      <p>Here follow a simple cheat sheet with some snippets created from lectures and internet research, these codes reflect some of the information I find interesting to remember.</p>
 
+      <h4>Activate a Function on Click</h4>
+      <div class="snippet">
+      <p>While not exactly javascript, it's important to remember that by adding the tag <i>onClick="function()"</i> to a HTML element will allow it to call the given function when clicked. This is especially useful for making interactive divs.</p>
+      </div>
 
+      <h4>Getting values and information from HTML</h4>
+      <div class="snippet">
+      <p>Allows us to target a specific id value, style or other data from a document by replaxing x with the apropriate value.<br><br>
+      <b>variable = document.getElementById("id").value;</b><br>
+      <i>Allows us to give the sought value to a variable.</i><br>
+      <b>document.getElementById("id").value = variable;</b><br>
+      <i>Allows us to push the value of a variable into the element, for instance, a text box.</i><br>
+      <b>document.getElementById("id").innerHTML = variable;</b><br>
+      <i>Changes what is inside the tag to the variable.</i><br>
+      </p>
+      </div>
+
+      <h4>Set Timeout</h4>
+      <div class="snippet">
+      <p>Allows us to set a timer in miliseconds so that a function will be called to run when the timer is done. Very useful for recursive functions.<br><br>
+      <b>function victoryCheck(){<br>
+        setTimeout(function(){victoryCheck()}, 1000);<br>
+      }</b><br><br>
+      <i>This function, after being called once will run itself every one second, allowing for a miriad of uses in terms of checking some information on a game or page.</i>
+      </p>
+      </div>
+
+      <h4>String Methods</h4>
+      <div class="snippet">
+      <p>Here are some of the useful string methods to remember.<br><br>
+      <b>string.replace("x","y");</b><br>
+      <i>Changes whatever instance of "x" inside the string to a "y".</i><br>
+      <b>string.includes("something");</b><br>
+      <i>Returns true or false if a string includes "something" in it's composition.</i><br>
+      <b>string.startWith("something") and string.endWith("something");</b><br>
+      <i>Similar to the one above, returns true or false if the string either starts with or ends with "something", depending on the method.</i><br>
+      </p>
+      </div>
+
+      <h4>Array Methods</h4>
+      <div class="snippet">
+      <p>Javascript allows for several array modification methods, making the life much easier.<br><br>
+      <b>array.pop() and array.shift();</b><br>
+      <i>Allows us to pop the last element or shift the first element from an array. Either actions pull the element out of the array, either into the void or into a variable.</i><br>
+      <b>array.push();</b><br>
+      <i>Allows us to insert a new element, whatever is inside the parenthesis, into the end of an array.</i><br>
+      <b>array.join(", ");</b><br>
+      <i>Joins all elements of an array into a string, adding whatever is inside the quotations as a separator. In this case, each element of the array will be joined in a string separated by ", ".</i><br>
+      </p>
+      </div>
+
+      <h4>For Of</h4>
+      <div class="snippet">
+      <p>An easier and more intuitive of making iterations for arrays.<br><br>
+      <b>for (variable of array) {<br>
+      do something...<br>
+      }</b><br>
+      <i>Will perform whatever statements are inside the for loop, considering each value on the arrays.</i><br>
+      </p>
+      </div>
+
+      <h4>Alerts and Prompts</h4>
+      <div class="snippet">
+      <p>Ways of communicating and getting input from the user without using a input element on HTML.<br><br>
+      <b>alert("Hello World");</b><br>
+      <i>Will pop up an alert box with the message "Hello World".</i><br>
+      <b>array.push(prompt("Enter a number:"));</b><br>
+      <i>Will pop up an box with the message "Enter a Number" and an input text for the user. In this example, it will get whatever input the user enters and push into the end of the array.</i><br>
+      </p>
+      </div>
+
+      <h4>Parsing Values</h4>
+      <div class="snippet">
+      <p>This function makes sure a value stored in an array is returned as an int or a NaN.<br><br>
+      <b>variable = parseInt(array[i]);</b><br>
+      <i>Will push on the i index from the array into the variable as a int.</i><br>
+      </p>
+      </div>
+
+      <h4>Creating Objects</h4>
+      <div class="snippet">
+      <p>How to create objects in Javascript.<br><br>
+      <b>let object = {</b><br>
+      <b>name: "Pedro",</b><br>
+      <b>lastname: "Ferreira",</b><br>
+      <b>Age: 20</b><br>
+      <b>}</b><br>
+      <i>With the object done, using each of the keys allows access to the information, for instance: object.name would return the string "Pedro". Objects can be arrays and can contain arrays or nested functions inside.</i></i><br>
+      </p>
+      </div>
+
+      <h4>Fetching JSONs</h4>
+      <div class="snippet">
+      <p>The methods fetch() and json() allows us to seek a url for a json.<br><br>
+      <b>response = fetch(url);</b><br>
+      <b>data = response.json();</b><br>
+      <i>We use fetch and the response object to get the body text of the json, which in turn is changed into a proper JSON  by parsing that body into a JSON.</i><br>
+      </p>
+      </div>
+
+      <h4>Converting JSON into Javascript Objects</h4>
+      <div class="snippet">
+      <p>This method allows you to store information obtained from a JSON file into a javascript object.<br><br>
+      <b>sample = JSON.parse(json);</b><br>
+      <i>Will push values of json into the object sample.</i><br>
+      </p>
+      </div>
+
+    </div>
+    <!-- CHEAT SHEET ENDS -->
+  </div>
+  <div class="bottomBar">
+    Page created in 2021 for TECH1101: Final Project.
+  </div>
 </body>
 
 </html>
